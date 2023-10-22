@@ -1,0 +1,20 @@
+info:
+  app:
+    name: uh2c registry service application
+    description: Microservice registry UH2C
+    version: G2R3C0
+
+# Application name discovery
+spring:
+  application:
+    name: uh2c-registry-service
+    
+ # profil DEV
+---
+spring:
+  profiles: dev
+  
+# URI config cloud
+  cloud:
+    config:
+      uri: http://localhost:8888

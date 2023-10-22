@@ -1,0 +1,18 @@
+# prevent the register in eurka config
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+        
+  server:
+    enableSelfPreservation: true
+    eviction-interval-timer-in-ms: 5000
+  
+# profil DEV
+---
+spring:
+  profiles: dev
+  
+#server port 
+server:  
+   port: 8761
